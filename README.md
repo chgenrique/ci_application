@@ -1,6 +1,5 @@
-#######################
+# CI Application
 CodeIgniter Application
-#######################
 
 Example Codeigniter Application
 
