@@ -10,7 +10,7 @@ $(document).ready(function(){
 $('#buttonSave').on('click',function(e){
     e.preventDefault();
     var formStatus = $('#formAddPerson').validate().form();
-
+//url: 'http://localhost/CrudPerson/index.php/TestCrudController/saveData',
     if(formStatus === true){ 
        var pname = $("#pname").val();
        var pdob = $("#pdob").val();
@@ -18,7 +18,7 @@ $('#buttonSave').on('click',function(e){
        var pemail = $('#pemail').val();
        $.ajax({
         type: "POST",
-        url: 'http://localhost/CrudPerson/index.php/TestCrudController/saveData',
+        url: 'index.php/TestCrudController/saveData',
         dataType: 'json',
         data: {pname: pname, pdob: pdob, pfavoritecolor:pfavoritecolor, pemail: pemail},
         success: function(data){
